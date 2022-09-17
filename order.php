@@ -42,6 +42,7 @@ if (isset($_POST["address"])) {
         $order_id = $conn->insert_id;
         $_SESSION["success"] = "Form submission successful!";
 
+        //Insert in book_order using book_cart
         $sql3 = "SELECT book_id, amount
         from book_cart";
 
